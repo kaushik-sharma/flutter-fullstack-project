@@ -1,5 +1,4 @@
 import 'package:budget_tracker/controllers/auth_provider.dart';
-import 'package:budget_tracker/pages/home_page.dart';
 import 'package:budget_tracker/values/enums.dart';
 import 'package:budget_tracker/widgets/overlay_loader.dart';
 import 'package:email_validator/email_validator.dart';

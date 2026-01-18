@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../values/constants.dart';
-
 class CustomButton extends StatelessWidget {
   final VoidCallback onPressed;
   final String text;
@@ -16,7 +14,7 @@ class CustomButton extends StatelessWidget {
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           padding: EdgeInsets.all(10),
-          backgroundColor: Constants.primaryColor,
+          backgroundColor: Theme.of(context).primaryColor,
           foregroundColor: Colors.black,
           textStyle: TextStyle(fontSize: 20),
         ),
@@ -42,7 +40,7 @@ class CustomTextButton extends StatelessWidget {
       onPressed: onPressed,
       style: TextButton.styleFrom(
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        foregroundColor: Constants.primaryColor,
+        foregroundColor: Theme.of(context).primaryColor,
         textStyle: TextStyle(fontSize: 16),
       ),
       child: Text(text),

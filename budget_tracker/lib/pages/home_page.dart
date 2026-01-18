@@ -2,7 +2,6 @@ import 'package:budget_tracker/controllers/dashboard_provider.dart';
 import 'package:budget_tracker/models/expense_model.dart';
 import 'package:budget_tracker/pages/expense_chart_page.dart';
 import 'package:budget_tracker/pages/expense_form_page.dart';
-import 'package:budget_tracker/values/constants.dart';
 import 'package:budget_tracker/values/enums.dart';
 import 'package:budget_tracker/widgets/overlay_loader.dart';
 import 'package:flutter/cupertino.dart';
@@ -57,7 +56,7 @@ class _HomePageState extends State<HomePage>
                       icon: Icon(
                         Icons.import_export,
                         size: 30,
-                        color: Constants.primaryColor,
+                        color: Theme.of(context).primaryColor,
                       ),
                     ),
                   ),
@@ -77,7 +76,7 @@ class _HomePageState extends State<HomePage>
                       icon: Icon(
                         Icons.bar_chart,
                         size: 30,
-                        color: Constants.primaryColor,
+                        color: Theme.of(context).primaryColor,
                       ),
                     ),
                   ),
@@ -148,7 +147,7 @@ class _HomePageState extends State<HomePage>
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.w600,
-              color: Constants.primaryColor,
+              color: Theme.of(context).primaryColor,
             ),
           ),
         ],
@@ -168,7 +167,7 @@ class ExpenseCard extends StatelessWidget {
       width: double.infinity,
       clipBehavior: Clip.antiAliasWithSaveLayer,
       decoration: BoxDecoration(
-        color: Constants.primaryColor,
+        color: Theme.of(context).primaryColor,
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(

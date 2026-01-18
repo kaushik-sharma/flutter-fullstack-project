@@ -1,8 +1,6 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 
-import '../values/constants.dart';
-
 class CustomDropdown<T> extends StatelessWidget {
   final T? value;
   final List<T> values;
@@ -53,7 +51,7 @@ class CustomDropdown<T> extends StatelessWidget {
       ),
       dropdownStyleData: DropdownStyleData(
         decoration: BoxDecoration(
-          color: Constants.backgroundColor,
+          color: Theme.of(context).scaffoldBackgroundColor,
           borderRadius: BorderRadius.circular(10),
         ),
       ),

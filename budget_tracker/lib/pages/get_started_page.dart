@@ -1,5 +1,4 @@
 import 'package:budget_tracker/pages/auth_page.dart';
-import 'package:budget_tracker/values/constants.dart';
 import 'package:budget_tracker/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +20,7 @@ class GetStartedPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 50,
                 fontWeight: FontWeight.w300,
-                color: Constants.primaryColor,
+                color: Theme.of(context).primaryColor,
               ),
             ),
             SizedBox(height: 10),
